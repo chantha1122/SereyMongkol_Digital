@@ -2,7 +2,6 @@
 
 > គេហទំព័រផ្តល់សេវាកម្មបង្កើតលិខិតអញ្ជើញអាពាហ៍ពិពាហ៍ឌីជីថលបែបប្រណីត ដោយរួមបញ្ចូលគ្នារវាង **វប្បធម៌ខ្មែរ** និង **បច្ចេកវិទ្យាទំនើប**។
 
-
 ## ✨ ចំណុចសំខាន់ៗ (Key Highlights)
 
 - **⚡ Pure CSS (0% JavaScript):** គ្រប់មុខងារអន្តរកម្ម រួមទាំង Mobile Toggle Menu, Smooth Scroll និង Hover Animations ដំណើរការដោយ **HTML5 & CSS3 សុទ្ធ ១០០%**។
@@ -14,9 +13,9 @@
 
 ## 🛠️ បច្ចេកវិទ្យា (Tech Stack)
 
-* **Markup:** Semantic HTML5
-* **Styling:** Tailwind CSS v4 CLI & Custom CSS3 Variables (`:root`, Flexbox, CSS Grid)
-* **Typography:** Google Fonts (`Moulpali`, `Moul`, `Suwannaphum`)
+- **Markup:** Semantic HTML5
+- **Styling:** Tailwind CSS v4 CLI & Custom CSS3 Variables (`:root`, Flexbox, CSS Grid)
+- **Typography:** Google Fonts (`Moulpali`, `Moul`, `Suwannaphum`)
 
 ---
 
@@ -33,11 +32,12 @@ npm install
 # ៣. Run Tailwind CLI Watch Mode
 npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ```
-*រួចបើកឯកសារ `index.html` លើ Browser ជាការស្រេច!*
+
+_រួចបើកឯកសារ `index.html` លើ Browser ជាការស្រេច!_
 
 ---
 
 ## 👨‍💻 អ្នកបង្កើត (Author)
 
-* **និស្សិត ៖** [ឈ្មោះរបស់អ្នក]
-* **គម្រោង ៖** Web Design & Development (Midterm Project)
+- **និស្សិត ៖** Chay Chantha
+- **គម្រោង ៖** Web Design & Development (Midterm Project)
