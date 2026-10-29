@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth scroll-pt-10">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>សិរីមង្គល​​ | សេវាកម្មបង្កើតលិខិតអញ្ជើញអាពាហ៍ពិពាហ៍ឌីជីថល</title>
+    <!-- external tailwind  -->
+    <link rel="stylesheet" href="/src/output.css" />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moul&family=Moulpali&family=Suwannaphum:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icon google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="fixed top-4 left-0 right-0 px-4 z-50">
+      <div
+        class="bg-emerald-surface/90 py-3 px-6 rounded-4xl max-w-6xl mx-auto backdrop-blur-md border border-an-gold-line shadow-2xl md:rounded-full"
+      >
+        <input type="checkbox" id="menu-toggle" class="hidden" />
+        <div class="flex justify-between items-center">
+          <a href="#home" class="flex items-center gap-2">
+            <span class="text-2xl">🪷</span
+            ><span class="font-moulpali text-gradient-gold text-sm sm:text-base"
+              >សិរីមង្គលឌីជីថល​​</span
+            >
+          </a>
+          <nav
+            class="hidden md:flex justify-between gap-6 font-moul text-an-muted text-xs lg:text-sm"
+          >
+            <a href="#service" class="hover:text-an-gold transition">សេវាកម្ម</a
+            ><a href="#template" class="hover:text-an-gold transition"
+              >គំរូធៀបការ</a
+            >
+            <a href="#step" class="hover:text-an-gold transition"
+              >របៀបកុម្ម៉ង់</a
+            ><a href="#price" class="hover:text-an-gold transition"
+              >កញ្ចប់តម្លៃ</a
+            ><a href="#about" class="hover:text-an-gold transition">អំពីយើង</a>
+          </nav>
+          <div class="flex items-center gap-3">
+            <a
+              href="#contact"
+              class="font-moulpali an-btn-gold px-4 sm:px-5 py-2 rounded-full text-xs tracking-wider"
+            >
+              ទាក់ទងកុម្ម៉ង់</a
+            >
+            <label
+              for="menu-toggle"
+              class="md:hidden text-an-gold p-1 text-xl cursor-pointer select-none"
+              >☰</label
+            >
+          </div>
+        </div>
+        <!-- navbar for mobile -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden border-t border-an-gold-line pt-4 pb-2 text-an-muted text-center font-moul text-sm space-y-3 mt-3"
+        >
+          <a href="#service" class="block py-1 hover:text-an-gold-bright"
+            >សេវាកម្ម</a
+          ><a href="#template" class="block py-1 hover:text-an-gold-bright"
+            >គំរូធៀបការ</a
+          >
+          <a href="#step" class="block py-1 hover:text-an-gold-bright"
+            >របៀបកុម្ម៉ង់</a
+          ><a href="#price" class="block py-1 hover:text-an-gold-bright"
+            >កញ្ចប់តម្លៃ</a
+          ><a href="#about" class="block py-1 hover:text-an-gold-bright"
+            >អំពីយើង</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- home section -->
+    <section
+      id="home"
+      class="bg-img-home text-center overflow-hidden pt-36 pb-20 px-4"
+    >
+      <div class="max-w-5xl mx-auto space-y-5">
+        <div
+          class="inline-flex items-center gap-2 text-an-muted text-sm bg-emerald-surface-3 border border-an-gold-line rounded-full py-1 px-4 backdrop-blur-md"
+        >
+          <span>🪷</span>
+          <span class="text-an-gold font-bold"
+            >សេវាកម្មសិរីមង្គលឌីជីថលខ្មែរ |
+          </span>
+          <span>ទំនើប • រហ័ស • សន្សំសំចៃ</span>
+        </div>
+        <h1
+          class="font-moul text-gradient-gold text-2xl md:text-3xl lg:text-4xl leading-relaxed md:leading-relaxed"
+        >
+          បង្កើតធៀបការឌីជីថលបែបប្រណិតសម្រាប់ថ្ងៃសិរីសួស្តីមង្គលការរបស់លោកអ្នក
+        </h1>
+        <p
+          class="text-an-muted max-w-2xl mx-auto text-sm md:text-base leading-relaxed"
+        >
+          ផ្ញើជូនភ្ញៀវកិត្តិយសយ៉ាងងាយស្រួលតាមតេឡេក្រាម និងបណ្តាញសង្គម
+          ជាមួយប្រព័ន្ធកត់ត្រា ផែនទីនាំផ្លូវ​ទីតាំងកម្មវិធី
+          និងមុខងារទទួលចំណងដៃឌីជីថលប្រកបដោយភាពថ្លៃថ្នូរ។
+        </p>
+        <!-- button -->
+        <div
+          class="inline-flex flex-wrap items-center justify-center gap-4 pt-4"
+        >
+          <a
+            href="#contact"
+            class="an-btn-gold px-4 py-3 rounded-xl font-moulpali shadow-2xl text-sm"
+            >កុម្ម៉ង់ធ្វើធៀបការឥឡូវនេះ</a
+          >
+          <a
+            href="#template"
+            class="font-moul text-an-gold-bright text-sm border border-an-gold-line px-4 py-3 rounded-xl bg-emerald-surface hover:bg-an-gold-deep/20 hover:border-an-gold transition hover:text-an-text"
+            >មើលគំរូធៀបការជាក់ស្តែង</a
+          >
+        </div>
+
+        <!-- card -->
+        <div
+          class="grid grid-cols-2 gap-4 md:grid-cols-4 text-an-text pt-12 max-w-3xl mx-auto"
+        >
+          <div class="an-card py-6 px-2">
+            <span
+              class="font-moul text-an-gold-bright text-xl md:text-2xl leading-relaxed"
+              >៩៩ +</span
+            ><span class="text-sm">គូស្វាមីភរយាបានប្រើប្រាស់</span>
+          </div>
+          <div class="an-card py-6 px-2">
+            <span
+              class="font-moul text-an-gold-bright text-xl md:text-2xl leading-relaxed"
+              >២៤ ម៉ោង</span
+            ><span class="text-sm">រៀបចំជូនបានទាន់ចិត្ត</span>
+          </div>
+          <div class="an-card py-6 px-2">
+            <span
+              class="font-moul text-an-gold-bright text-xl md:text-2xl leading-relaxed"
+              >១០០ %</span
+            ><span class="text-sm">អក្សរខ្មែរនិងក្បាច់រចនា</span>
+          </div>
+          <div class="an-card py-6 px-2">
+            <span
+              class="font-moul text-an-gold-bright text-xl md:text-2xl leading-relaxed"
+              >៩៩.៩៩ %</span
+            ><span class="text-sm">ភ្ញៀវកិត្តិយសពេញចិត្ត</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- feature section -->
+    <section id="service" class="py-18 px-4">
+      <div class="max-w-6xl mx-auto text-center">
+        <span class="text-an-gold-bright">មុខងារពិសេសៗ</span>
+        <h2
+          class="text-gradient-gold font-moulpali text-2xl md:text-3xl leading-relaxed mt-1"
+        >
+          លក្ខណៈពិសេសនៃសិរីមង្គលឌីជីថល
+        </h2>
+        <div class="khmer-divider">
+          <span>🪷</span>
+        </div>
+        <p class="text-an-muted text-xs md:text-sm max-w-lg mx-auto">
+          គ្រប់មុខងារត្រូវបានបង្កើតឡើងដោយយកចិត្តទុកដាក់
+          ដើម្បីផ្តល់នូវបទពិសោធន៍ដ៏ល្អឥតខ្ចោះ
+          និងកិត្តិយសខ្ពង់ខ្ពស់ដល់ភ្ញៀវកិត្តយសរបស់អ្នក។
+        </p>
+        <!-- card feature -->
+        <div
+          class="text-an-muted grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-left pt-12"
+        >
+          <!-- 1 -->
+          <div class="an-card1 space-y-3 p-6">
+            <div
+              class="w-12 h-12 rounded-xl bg-emerald-surface-2 border border-an-gold-line flex justify-center items-center text-2xl"
+            >
+              <span class="material-symbols-outlined"> map </span>
+            </div>
+            <h3 class="text-an-gold-bright font-moul">ផែនទី Google Map</h3>
+            <p class="text-xs leading-relaxed">
+              ភ្ញៀវចុចតែមួយប៉ក់ វានឹងបើកកម្មវិធី Google Maps
+              នាំផ្លូវផ្ទាល់ទៅកាន់សាលពិធីជប់លៀងយ៉ាងងាយស្រួល
+              មិនបារម្ភរឿងវង្វេងផ្លូវឡើយ។
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="an-card1 space-y-3 p-6">
+            <div
+              class="w-12 h-12 rounded-xl bg-emerald-surface-2 border border-an-gold-line flex justify-center items-center text-2xl"
+            >
+              <span class="material-symbols-outlined"> mark_email_unread </span>
+            </div>
+            <h3 class="text-an-gold-bright font-moul">
+              ប្រព័ន្ធឆ្លើយតបសារជូនពរ
+            </h3>
+            <p class="text-xs leading-relaxed">
+              រៀបចំ
+              និងប្រមូលផ្តុំសារជូនពរដែលផ្ញើមកពីច្រើនបណ្តាញសង្គមមកកន្លែងតែមួយ
+              ដើម្បីងាយស្រួលតាមដាន និងឆ្លើយតប។
+            </p>
+          </div>
+          <!-- 3 -->
+          <div class="an-card1 space-y-3 p-6">
+            <div
+              class="w-12 h-12 rounded-xl bg-emerald-surface-2 border border-an-gold-line flex justify-center items-center text-2xl"
+            >
+              <span class="material-symbols-outlined"> qr_code_scanner </span>
+            </div>
+            <h3 class="text-an-gold-bright font-moul">
+              សំបុត្រចង់ដៃឌីជីថល ABA KHQR
+            </h3>
+            <p class="text-xs leading-relaxed">
+              ងាយស្រួលសម្រាប់ភ្ញៀវដែលនៅឆ្ងាយ ឬជាប់រវល់មិនបានមកផ្ទាល់
+              អាចស្កេនចងដៃជូនពរតាម ABA Bank ឬ KHQR បានភ្លាមៗ។
+            </p>
+          </div>
+          <!-- 4 -->
+          <div class="an-card1 space-y-3 p-6">
+            <div
+              class="w-12 h-12 rounded-xl bg-emerald-surface-2 border border-an-gold-line flex justify-center items-center text-2xl"
+            >
+              <span class="material-symbols-outlined"> music_note_2 </span>
+            </div>
+            <h3 class="text-an-gold-bright font-moul">ចាក់ភ្លេងការពិរោះៗ</h3>
+            <p class="text-xs leading-relaxed">
+              មានប៊ូតុងចាក់ និងបិទភ្លេងការខ្មែរប្រពៃណីពិរោះៗ
+              អមជាមួយការបើកមើលធៀបការ បង្កើនបរិយាកាសកាន់តែអធិកអធម និងរ៉ូមែនទិក។
+            </p>
+          </div>
+          <!-- 5 -->
+          <div class="an-card1 space-y-3 p-6">
+            <div
+              class="w-12 h-12 rounded-xl bg-emerald-surface-2 border border-an-gold-line flex justify-center items-center text-2xl"
+            >
+              <span class="material-symbols-outlined"> filter </span>
+            </div>
+            <h3 class="text-an-gold-bright font-moul">
+              ចិត្រសាលរូបថតអនុស្សាវរីយ៍
+            </h3>
+            <p class="text-xs leading-relaxed">
+              បង្ហាញរូបថតអនុស្សាវរីយ៍ដ៏ផ្អែមល្ហែមរបស់គូស្វាមីភរិយាថ្មីយ៉ាងស្រស់ស្អាត
+              ជាមួយស៊ុមមាសរាជវាំង និងកម្រិតរូបភាពច្បាស់ត្រជាក់ភ្នែក។
+            </p>
+          </div>
+          <!-- 6 -->
+
+          <div class="an-card1 space-y-3 p-6">
+            <div
+              class="w-12 h-12 rounded-xl bg-emerald-surface-2 border border-an-gold-line flex justify-center items-center text-2xl"
+            >
+              <span class="material-symbols-outlined"> hourglass_top </span>
+            </div>
+            <h3 class="text-an-gold-bright font-moul">នាឡិការាប់ថយក្រោយ</h3>
+            <p class="text-xs leading-relaxed">
+              រាប់ថយក្រោយដល់ថ្ងៃសិរីសួស្តីមង្គលអាពាហ៍ពិពាហ៍ (ថ្ងៃ ម៉ោង នាទី)
+              ជួយដាស់តឿនឱ្យភ្ញៀវកិត្តិយសកត់ចំណាំទុកកុំឱ្យភ្លេច។
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- template section -->
+    <section id="template" class="py-18 px-4">
+      <div class="max-w-6xl mx-auto text-center">
+        <span class="text-an-gold-bright">ស្នាដៃពិតប្រាកដ</span>
+        <h2
+          class="font-moulpali text-gradient-gold text-2xl md:text-3xl leading-relaxed"
+        >
+          គំរូធៀបការដែលបានធ្វើជូនភ្ញៀវ
+        </h2>
+        <div class="khmer-divider">
+          <span>🪷</span>
+        </div>
+        <p class="text-an-muted text-xs md:text-sm mb-16">
+          នេះជាស្នាដៃ
+          និងគំរូធៀបការឌីជីថលមួយចំនួនដែលយើងខ្ញុំបានរចនាជូនគូស្វាមីភរយាកន្លងមក
+        </p>
+
+        <!-- sample template -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="an-card2 overflow-hidden hover:border-an-gold transition duration-300 group"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiKOzdRc-s8Vg3B9jWKEqGpkaWjsI4fWAwsjngmQqtBDDxKPcf2nJ-JU&s=10"
+                alt="pre1"
+              />
+              <span
+                class="absolute right-2 top-2 text-an-gold-bright bg-emerald-surface-3 rounded-2xl px-3 py-1 text-xs border border-an-gold/40"
+                >បៃតងរាជវាំង និងទឹកមាស</span
+              >
+            </div>
+
+            <div class="text-left p-6 space-y-2.5">
+              <h3
+                class="text-gradient-gold font-moulpali text-xl leading-relaxed"
+              >
+                សុខា និង ដារា
+              </h3>
+              <p class="text-an-gold-bright text-xs">
+                📅 ១៥ ធ្នូ ២០២៦ • 🏛️ សាលកោះពេជ្រ អគារ G
+              </p>
+              <p class="text-an-muted text-xs">
+                "ធៀបការរចនាបែបអភិជន ពណ៌បៃតងរាជវាំងរំលេចទឹកមាស
+                មានក្បាច់ខ្មែរបុរាណ ផែនទី និងចងដៃតាម KHQR។"
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <a
+                href="#"
+                class="w-full an-btn-gold py-2.5 rounded-xl text-xs font-moul text-center block"
+              >
+                មើលគំរូធៀបការផ្ទាល់
+              </a>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="an-card2 overflow-hidden hover:border-an-gold transition duration-300 group"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFKkaLBmlzlOJh2emgIM8mqxMCWO8KZnQsd6NCvQ-Yog82yKJniR71jKI&s=10"
+                alt="pre1"
+              />
+              <span
+                class="absolute right-2 top-2 text-an-gold-bright bg-emerald-surface-3 rounded-2xl px-3 py-1 text-xs border border-an-gold/40"
+                >ខៀវរាត្រី និងទឹកមាស</span
+              >
+            </div>
+
+            <div class="text-left p-6 space-y-2.5">
+              <h3
+                class="text-gradient-gold font-moulpali text-xl leading-relaxed"
+              >
+                វិបុល និង រចនា
+              </h3>
+              <p class="text-an-gold-bright text-xs">
+                📅 ០៨ មករា ២០២៧ • 🏛️ សណ្ឋាគារ សូហ្វីតែល ភ្នំពេញ
+              </p>
+              <p class="text-an-muted text-xs">
+                ""ស្ទីលពណ៌ខៀវរាត្រីរំលេចទឹកមាស ត្រជាក់ភ្នែក និងថ្លៃថ្នូរ
+                មានប្រព័ន្ធឆ្លើយតប និងផែនទីទីតាំងពិធី។"
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <a
+                href="#"
+                class="w-full an-btn-gold py-2.5 rounded-xl text-xs font-moul text-center block"
+              >
+                មើលគំរូធៀបការផ្ទាល់
+              </a>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div
+            class="an-card2 overflow-hidden hover:border-an-gold transition duration-300 group"
+          >
+            <div class="relative h-48 overflow-hidden">
+              <img
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-stHqw41YPE8lrj9Z_8mD3tDi2pkEiLNA_cS3XtXf4-GdX0ppjdVaYD4&s=10"
+                alt="pre1"
+              />
+              <span
+                class="absolute right-2 top-2 text-an-gold-bright bg-emerald-surface-3 rounded-2xl px-3 py-1 text-xs border border-an-gold/40"
+                >ក្រហមឈាមជ្រូក និងទឹកមាស</span
+              >
+            </div>
+
+            <div class="text-left p-6 space-y-2.5">
+              <h3
+                class="text-gradient-gold font-moulpali text-xl leading-relaxed"
+              >
+                បូរិទ្ធ និង ស្រីពៅ
+              </h3>
+              <p class="text-an-gold-bright text-xs">
+                📅 ២០ កុម្ភៈ ២០២៧ • 🏛️ មជ្ឈមណ្ឌល ឌឹ ព្រេមៀ សែនសុខ
+              </p>
+              <p class="text-an-muted text-xs">
+                ""រចនាប័ទ្មពណ៌ក្រហមឈាមជ្រូក និងទឹកមាសប្រណីត
+                ស័ក្តិសមទាំងពិធីពេលព្រឹក និងពិធីពេលល្ងាច។"
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <a
+                href="#"
+                class="w-full an-btn-gold py-2.5 rounded-xl text-xs font-moul text-center block"
+              >
+                មើលគំរូធៀបការផ្ទាល់
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- step  section -->
+    <section id="step" class="py-18 px-4">
+      <div
+        class="an-card1 p-6 max-w-5xl mx-auto sm:p-12 border-2 border-an-gold/40 section-step-bg"
+      >
+        <div class="text-center mb-6 space-y-2">
+          <span class="text-an-gold-bright"> ភាពងាយស្រួល និងរហ័ស </span>
+          <h2
+            class="font-moulpali text-2xl sm:text-3xl text-gradient-gold leading-relaxed"
+          >
+            ៣ ជំហានងាយៗក្នុងការកុម្ម៉ង់
+          </h2>
+          <div class="khmer-divider">
+            <span>🪷</span>
+          </div>
+        </div>
+        <!-- circle -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div class="space-y-3">
+            <div
+              class="mx-auto w-14 h-14 rounded-full border-2 border-an-gold bg-emerald-surface-3 font-moul text-an-gold-bright flex justify-center items-center shadow-lg text-2xl"
+            >
+              ១
+            </div>
+            <h3 class="text-an-gold-bright font-moul">ជ្រើសរើសម៉ូដធៀបការ</h3>
+            <p class="text-an-muted text-xs">
+              មើលគំរូ និងជ្រើសរើសពណ៌ដែលអ្នកពេញចិត្ត (បៃតងរាជវាំង, ខៀវរាត្រី,
+              ក្រហមឈាមជ្រូក ឬសូត្រភ្លុក)។
+            </p>
+          </div>
+          <!-- 2 -->
+          <div class="space-y-3">
+            <div
+              class="mx-auto w-14 h-14 rounded-full border-2 border-an-gold bg-emerald-surface-3 font-moul text-an-gold-bright flex justify-center items-center shadow-lg text-2xl"
+            >
+              ២
+            </div>
+            <h3 class="text-an-gold-bright font-moul">
+              ផ្ញើព័ត៌មានតាមតេឡេក្រាម
+            </h3>
+            <p class="text-an-muted text-xs">
+              ផ្ញើឈ្មោះកូនកំលោះ-កូនក្រមុំ, ឈ្មោះមាតាបិតា, កាលបរិច្ឆេទ,
+              ទីតាំងពិធី និងរូបថតមកកាន់ក្រុមការងារយើងខ្ញុំ។
+            </p>
+          </div>
+          <!-- 3 -->
+          <div class="space-y-3">
+            <div
+              class="mx-auto w-14 h-14 rounded-full border-2 border-an-gold bg-emerald-surface-3 font-moul text-an-gold-bright flex justify-center items-center shadow-lg text-2xl"
+            >
+              ៣
+            </div>
+            <h3 class="text-an-gold-bright font-moul">
+              ទទួល Link ធៀបការភ្លាមៗ
+            </h3>
+            <p class="text-an-muted text-xs">
+              យើងរៀបចំរួចរាល់ក្នុងរយៈពេល ២៤ ម៉ោង! លោកអ្នកនឹងទទួលបាន Link
+              ធៀបការផ្ទាល់ខ្លួន រួចផ្ញើជូនភ្ញៀវបានភ្លាម។
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- price section -->
+    <section id="price" class="py-18 px-4">
+      <div class="max-w-6xl mx-auto text-center">
+        <div class="text-center mb-6 space-y-2">
+          <span class="text-an-gold-bright"> តម្លៃសមរម្យ និងសន្សំសំចៃ </span>
+          <h2
+            class="font-moulpali text-2xl sm:text-3xl text-gradient-gold leading-relaxed"
+          >
+            កញ្ចប់តម្លៃសេវាកម្ម
+          </h2>
+          <div class="khmer-divider">
+            <span>🪷</span>
+          </div>
+          <p class="text-an-muted text-sm">
+            តម្លៃសមរម្យ បង់តែម្តងប្រើប្រាស់បានរហូតដល់ចប់កម្មវិធី
+            គ្មានការគិតថ្លៃប្រចាំខែឡើយ។
+          </p>
+        </div>
+        <!-- price -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-6">
+          <div class="p-6 md:p-8 an-card">
+            <div class="space-y-6">
+              <h3 class="text-an-text font-moul text-xl">កញ្ចប់សន្សំសំចៃ</h3>
+              <p class="text-an-muted">
+                <span class="font-moul text-an-gold-bright text-3xl"
+                  >$១៥ / </span
+                >មួយកម្មវិធី
+              </p>
+              <hr class="text-an-gold-line" />
+            </div>
+            <ul class="text-an-muted text-xs text-left space-y-3 py-6">
+              <li>✓ ធៀបការឌីជីថល Responsive គ្រប់ទូរស័ព្ទដៃ</li>
+              <li>✓ កាលវិភាគកម្មវិធីសិរីមង្គល</li>
+              <li>✓ ផែនទី Google Maps ទីតាំងពិធី</li>
+              <li>✓ នាឡិការាប់ថយក្រោយដល់ថ្ងៃការ</li>
+              <li class="opacity-40">✕ គ្មានប្រព័ន្ធឆ្លើយតបការចូលរួម</li>
+              <li class="opacity-40">✕ គ្មានចងដៃ ABA KHQR</li>
+            </ul>
+            <hr class="text-an-gold-line" />
+            <a
+              href="#contact"
+              class="w-full an-btn-ghost py-3 mt-6 rounded-xl text-xs font-bold block text-center"
+            >
+              ជ្រើសរើសកញ្ចប់នេះ
+            </a>
+          </div>
+          <!-- 2 -->
+          <div
+            class="p-8 md:p-12 an-card !border-2 !border-an-gold relative shadow-2xl md:-translate-y-2"
+          >
+            <div
+              class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-an-gold to-an-gold-deep text-emerald-canvas font-bold text-[11px] px-4 py-1 rounded-full uppercase tracking-wider font-suwannaphum shadow-md whitespace-nowrap"
+            >
+              ពេញនិយមបំផុត
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-gradient-gold font-moulpali text-xl">
+                កញ្ចប់ VIP ពេញលេញ
+              </h3>
+              <p class="text-an-muted">
+                <span class="font-moul text-an-gold-bright text-4xl"
+                  >$២៥ / </span
+                >មួយកម្មវិធី
+              </p>
+              <hr class="text-an-gold-line" />
+            </div>
+
+            <ul class="text-an-text text-xs text-left space-y-3 py-6">
+              <li>✓ រួមបញ្ចូលគ្រប់មុខងារកញ្ចប់សន្សំសំចៃ</li>
+              <li class="text-an-gold-bright font-bold">
+                ✓ ប្រព័ន្ធឆ្លើយតបការចូលរួមភ្ញៀវពេញលេញ
+              </li>
+              <li class="text-an-gold-bright font-bold">
+                ✓ ចងដៃឌីជីថលតាម ABA KHQR
+              </li>
+              <li>✓ វិចិត្រសាលរូបថតអនុស្សាវរីយ៍ (រហូតដល់ ១០ សន្លឹក)</li>
+              <li>✓ ប៊ូតុងចាក់ភ្លេងការប្រពៃណីខ្មែរ</li>
+              <li>✓ ប្រអប់កត់ត្រាសារជូនពរពីភ្ញៀវ</li>
+            </ul>
+
+            <hr class="text-an-gold-line" />
+
+            <a
+              href="#contact"
+              class="w-full an-btn-gold py-3.5 mt-6 rounded-xl text-xs font-moul block text-center shadow-xl"
+            >
+              កុម្ម៉ង់កញ្ចប់ VIP ឥឡូវនេះ
+            </a>
+          </div>
+          <!-- 3 -->
+          <div class="p-6 md:p-8 an-card">
+            <div class="space-y-6">
+              <h3 class="text-an-text font-moul text-xl">
+                កញ្ចប់ឈ្មោះផ្ទាល់ខ្លួន
+              </h3>
+              <p class="text-an-muted">
+                <span class="font-moul text-an-gold-bright text-3xl"
+                  >$៤៥ / </span
+                >មួយកម្មវិធី
+              </p>
+              <hr class="text-an-gold-line" />
+            </div>
+            <ul class="text-an-muted text-xs text-left space-y-3 py-6">
+              <li>✓ មុខងារពេញលេញនៃកញ្ចប់ VIP</li>
+              <li class="text-an-gold">
+                ✓ ឈ្មោះគេហទំព័រផ្ទាល់ខ្លួន (sokha-dara.com)
+              </li>
+              <li>✓ រូបថតអនុស្សាវរីយ៍មិនកំណត់ចំនួន</li>
+              <li>✓ នាឡិការាប់ថយក្រោយដល់ថ្ងៃការ</li>
+              <li>✓ រៀបចំកូដ និងរចនាម៉ូដតាមតម្រូវការ</li>
+              <li>✓ ជំនួយការបច្ចេកទេស និងកែសម្រួល ២៤ ម៉ោង</li>
+            </ul>
+            <hr class="text-an-gold-line" />
+            <a
+              href="#contact"
+              class="w-full an-btn-ghost py-3 mt-6 rounded-xl text-xs font-bold block text-center"
+            >
+              ជ្រើសរើសកញ្ចប់នេះ
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  about us section-->
+    <section id="about" class="py-18 px-4">
+      <div class="max-w-5xl mx-auto an-card2">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 md:p-10 items-center"
+        >
+          <div class="space-y-5">
+            <p class="text-an-gold-bright">អំពីក្រុមការងារ</p>
+            <h3
+              class="text-gradient-gold text-2xl md:text-3xl font-moulpali leading-relaxed"
+            >
+              អំពីយើងខ្ញុំ
+            </h3>
+            <p class="text-an-text text-sm">
+              យើងខ្ញុំជាក្រុមអ្នករចនាគេហទំព័រខ្មែរ
+              ដែលមានក្តីស្រឡាញ់យ៉ាងជ្រាលជ្រៅចំពោះវប្បធម៌
+              និងប្រពៃណីអាពាហ៍ពិពាហ៍ខ្មែរ។
+            </p>
+            <p class="text-an-muted text-xs">
+              បេសកកម្មរបស់យើង
+              គឺជួយឱ្យគូស្វាមីភរិយាទាំងអស់អាចចែករំលែកសេចក្តីរីករាយ
+              និងក្តីស្រឡាញ់ទៅកាន់ភ្ញៀវកិត្តិយស ប្រកបដោយភាពងាយស្រួល សន្សំសំចៃ
+              និងថ្លៃថ្នូរបំផុត។
+            </p>
+            <p class="text-an-gold-bright text-xs">
+              🏛️ រាជធានីភ្នំពេញ • 💬 Telegram: @khmer_wedding
+            </p>
+          </div>
+          <div class="p-8 an-card space-y-3">
+            <p class="text-an-gold text-2xl">❝</p>
+            <i
+              >"ធៀបការស្អាតខ្លាំងណាស់បង! ភ្ញៀវសរសើរគ្រប់គ្នា
+              ពិសេសមុខងារឆ្លើយតបការចូលរួម និងផែនទី
+              ជួយឱ្យខ្ញុំដឹងចំនួនភ្ញៀវច្បាស់ មិនខាតតុជប់លៀងទាល់តែសោះ។
+              អរគុណក្រុមការងារខ្លាំងណាស់!"</i
+            >
+            <div class="flex gap-4 items-center">
+              <span
+                class="w-12 h-12 rounded-full shrink-0 bg-emerald-700/60 border border-an-gold-line flex justify-center items-center"
+                >🪷</span
+              >
+              <div>
+                <p class="font-moulpali text-an-gold-bright">អ្នកនាង សុខា</p>
+                <p class="text-xs">កូនក្រមុំនៅសាលកោះពេជ្រ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact" class="py-18 px-4">
+      <div
+        class="max-w-4xl mx-auto text-center an-card border-2 p-6 sm:p-16 section-contact-bg"
+      >
+        <span class="text-an-gold-bright">ទំនាក់ទំនង</span>
+        <h2
+          class="font-moulpali text-gradient-gold text-2xl md:text-3xl leading-relaxed"
+        >
+          ទាក់ទងកុម្ម៉ង់ធ្វើធៀបការ
+        </h2>
+        <div class="khmer-divider">
+          <span>🪷</span>
+        </div>
+        <p class="text-an-muted text-xs md:text-sm mb-8">
+          សូមបំពេញព័ត៌មានខាងក្រោម ឬផ្ញើសារផ្ទាល់មកកាន់ Telegram របស់យើងខ្ញុំ៖
+        </p>
+        <!-- contact -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+          <a
+            href="https://t.me/chaychantha55"
+            target="_blank"
+            class="p-3.5 rounded-xl bg-emerald-surface-2 border border-an-gold/40 text-center hover:border-an-gold hover:scale-[1.02] transition block"
+          >
+            <span class="text-xl block mb-1">💬</span>
+            <span class="text-xs font-bold text-an-gold-bright block"
+              >Telegram ផ្ទាល់</span
+            >
+            <span class="text-[11px] text-an-muted">@khmer_wedding</span>
+          </a>
+          <a
+            href="tel:+855975915907"
+            class="p-3.5 rounded-xl bg-emerald-surface-2 border border-an-gold/40 text-center hover:border-an-gold hover:scale-[1.02] transition block"
+          >
+            <span class="text-xl block mb-1">📞</span>
+            <span class="text-xs font-bold text-an-gold-bright block"
+              >ទូរស័ព្ទទំនាក់ទំនង</span
+            >
+            <span class="text-[11px] text-an-muted">០១២ ៣៤៥ ៦៧៨</span>
+          </a>
+          <a
+            href="https://web.facebook.com/chantha.chantha.9634340"
+            target="_blank"
+            class="p-3.5 rounded-xl bg-emerald-surface-2 border border-an-gold/40 text-center hover:border-an-gold hover:scale-[1.02] transition block"
+          >
+            <span class="text-xl block mb-1">🏛️</span>
+            <span class="text-xs font-bold text-an-gold-bright block"
+              >ទំព័រ Facebook</span
+            >
+            <span class="text-[11px] text-an-muted">ធៀបការឌីជីថលខ្មែរ</span>
+          </a>
+        </div>
+        <!-- input info -->
+        <form action="#" class="max-w-xl mx-auto text-left space-y-4">
+          <!-- 1 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center"
+          >
+            <div>
+              <label class="text-an-gold-bright block text-xs mb-1"
+                >គោត្តនាម និងនាមពេញ *</label
+              >
+              <input
+                class="w-full text-sm bg-emerald-surface-3 border border-an-gold/50 rounded-xl py-2.5 px-4 focus:outline-none focus:border-an-gold transition placeholder:text-an-muted/80"
+                type="text"
+                placeholder="ឧទាហរណ៍៖ ជា ចាន់ថា"
+                required
+              />
+            </div>
+            <div>
+              <label class="text-an-gold-bright block text-xs mb-1"
+                >លេខទូរស័ព្ទ ឬ Telegram *</label
+              >
+              <input
+                class="w-full text-sm bg-emerald-surface-3 border border-an-gold/50 rounded-xl py-2.5 px-4 focus:outline-none focus:border-an-gold transition placeholder:text-an-muted/80"
+                type="text"
+                placeholder="ឧទាហរណ៍៖ 097 234 467"
+                required
+              />
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-4 justify-center items-center"
+          >
+            <div>
+              <label class="text-an-gold-bright block text-xs mb-1"
+                >កញ្ចប់តម្លៃដែលចាប់អារម្មណ៍</label
+              >
+              <select
+                class="w-full text-an-text bg-emerald-surface-3 border border-an-gold/50 rounded-xl py-1.5 px-4 focus:outline-none focus:border-an-gold transition placeholder:text-an-muted/80 text-sm"
+              >
+                <option>កញ្ចប់ VIP ពេញលេញ ($២៥)</option>
+                <option>កញ្ចប់សន្សំសំចៃ ($១៥)</option>
+                <option>កញ្ចប់ឈ្មោះផ្ទាល់ខ្លួន ($៤៥)</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-an-gold-bright block text-xs mb-1"
+                >កាលបរិច្ឆេទថ្ងៃមង្គលការ</label
+              >
+              <input
+                class="w-full text-an-text bg-emerald-surface-3 border border-an-gold/50 rounded-xl py-2.5 px-4 focus:outline-none focus:border-an-gold transition placeholder:text-an-muted/80 text-sm"
+                type="date"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <label class="text-an-gold-bright block text-xs mb-1"
+              >សារ ឬសំណូមពរបន្ថែម</label
+            >
+            <textarea
+              placeholder="ឧទាហរណ៍៖ ចង់បាន Theme ពណ៌បៃតងរាជវាំង និងមានចងដៃតាម KHQR..."
+              rows="3"
+              class="w-full text-an-text bg-emerald-surface-3 border border-an-gold/50 rounded-xl py-2.5 px-4 focus:outline-none focus:border-an-gold transition placeholder:text-an-muted/80 text-xs"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="an-btn-gold w-full rounded-xl py-2 font-moul cursor-pointer"
+          >
+            ផ្ញើសំណើកុម្ម៉ង់
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer
+      class="border-t-2 border-an-gold/40 py-16 px-4 text-center bg-emerald-surface/95 backdrop-blur-md relative space-y-6"
+    >
+      <div
+        class="w-12 h-12 mx-auto rounded-full bg-emerald-surface-2 border border-an-gold flex items-center justify-center text-xl text-an-gold shadow-lg"
+      >
+        🪷
+      </div>
+
+      <p
+        class="font-moulpali text-2xl sm:text-3xl text-gradient-gold leading-relaxed"
+      >
+        សិរីមង្គលឌីជីថល​​
+      </p>
+
+      <div class="flex items-center justify-center gap-3 my-2">
+        <div class="h-[1px] w-12 bg-an-gold/30"></div>
+        <span class="text-an-gold text-sm">❦</span>
+        <div class="h-[1px] w-12 bg-an-gold/30"></div>
+      </div>
+
+      <div
+        class="flex flex-wrap justify-center gap-6 text-xs text-an-muted font-bold"
+      >
+        <a href="#service" class="hover:text-an-gold-bright transition"
+          >សេវាកម្ម</a
+        >
+        <a href="#template" class="hover:text-an-gold-bright transition"
+          >គំរូធៀបការ</a
+        >
+        <a href="#price" class="hover:text-an-gold-bright transition"
+          >កញ្ចប់តម្លៃ</a
+        >
+        <a href="#step" class="hover:text-an-gold-bright transition"
+          >របៀបកុម្ម៉ង់</a
+        >
+        <a href="#about" class="hover:text-an-gold-bright transition"
+          >អំពីយើង</a
+        >
+        <a href="#contact" class="hover:text-an-gold-bright transition"
+          >ទំនាក់ទំនង</a
+        >
+      </div>
+
+      <div class="pt-6 border-t border-an-gold-line/40 max-w-sm mx-auto">
+        <p class="text-[11px] text-an-muted/60">
+          រក្សាសិទ្ធិគ្រប់យ៉ាង © ២០២៦ សិរីមង្គលឌីជីថល​​
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

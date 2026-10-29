@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  /* font */
+  --font-moulpali: "Moulpali", sans-serif;
+  --font-moul: "Moul", serif;
+  --font-Suwannaphum: "Suwannaphum", serif;
+
+  /* color emerald*/
+  --color-emerald-canvas: #06140e;
+  --color-emerald-surface: #0d241a;
+  --color-emerald-surface-2: #143526;
+  --color-emerald-surface-3: #1c4533;
+  --color-emerald-accent: #10b981;
+  --color-emerald-light: #34d399;
+  /* gold */
+  --color-an-gold: #e2ba72;
+  --color-an-gold-bright: #f5dca4;
+  --color-an-gold-deep: #a87f38;
+  --color-an-gold-line: rgba(226, 186, 114, 0.28);
+  /* text */
+  --color-an-text: #f4fbf7;
+  --color-an-muted: #a7c1b4;
+}
